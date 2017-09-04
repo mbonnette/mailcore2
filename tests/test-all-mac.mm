@@ -29,6 +29,7 @@ static void testProviders() {
 }
 
 
+MCOIMAPFolder * findTradeFolder(NSArray *folders);
 MCOIMAPFolder * findTradeFolder(NSArray *folders) {
 	MCOIMAPFolder * retFolder = NULL;
 	
@@ -42,8 +43,9 @@ MCOIMAPFolder * findTradeFolder(NSArray *folders) {
 }
 
 
+NSString * getMessageBody(MCOIMAPSession *session, MCOIMAPFolder *folder, MCOIMAPMessage *msg);
 NSString * getMessageBody(MCOIMAPSession *session, MCOIMAPFolder *folder, MCOIMAPMessage *msg) {
-	
+
 	__block NSString * plainTextBody = NULL;
 	
 	MCOIMAPFetchParsedContentOperation * op = [session fetchParsedMessageOperationWithFolder:[folder path] uid:[msg uid]];
@@ -57,8 +59,9 @@ NSString * getMessageBody(MCOIMAPSession *session, MCOIMAPFolder *folder, MCOIMA
 }
 
 
+void iterateMessages(MCOIMAPSession *session, MCOIMAPFolder *folder);
 void iterateMessages(MCOIMAPSession *session, MCOIMAPFolder *folder) {
-	
+
 	//MCOIndexSet *indexSet = [MCOIndexSet indexSetWithRange:MCORangeMake(1, 5)];
 	MCOIndexSet *indexSet = [MCOIndexSet indexSetWithRange:MCORangeMake(1, UINT64_MAX)];
 	
@@ -76,6 +79,7 @@ void iterateMessages(MCOIMAPSession *session, MCOIMAPFolder *folder) {
 
 
 
+void testObjC();
 void testObjC()
 {
   MCOIMAPSession *session = [[MCOIMAPSession alloc] init];
@@ -96,10 +100,10 @@ void testObjC()
       NSLog(@"CONNECTED");
       NSLog(@"fetch all folders");
       MCOIMAPFetchFoldersOperation *foldersOp = [session fetchAllFoldersOperation];
-      [foldersOp start:^(NSError *err, NSArray *folders) {
+      [foldersOp start:^(NSError *err1, NSArray *folders) {
         NSLog(@"fetch all folders done");
-        if (err) {
-          NSLog(@"Oh crap, an error %@", err);
+        if (err1) {
+          NSLog(@"Oh crap, an error %@", err1);
         } else {
           NSLog(@"Folder %@", folders);
 			

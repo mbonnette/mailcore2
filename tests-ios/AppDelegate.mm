@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "test-all-mac.h"
 #import "test-all.h"
+
+
 
 @implementation AppDelegate
 
@@ -26,7 +29,9 @@
     self.window.rootViewController = [[UIViewController alloc] init];
     [self.window makeKeyAndVisible];
         
-    testAll();
+	testAllMac();
+	
+	testAll();
     
     return YES;
 }
