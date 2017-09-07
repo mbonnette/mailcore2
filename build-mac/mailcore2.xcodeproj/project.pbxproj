@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1280EFAB1F5E45C3007D0FF8 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BA2C191705F4E6003F0E9E /* libMailCore-ios.a */; };
+		12BF75751F5D003100E33EA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B5AE1119F63496001352A6 /* Foundation.framework */; };
 		1820E7D51BD403ED00835D1E /* MCIMAPCustomCommandOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1820E7D31BD403ED00835D1E /* MCIMAPCustomCommandOperation.cpp */; };
 		1820E7D61BD403ED00835D1E /* MCIMAPCustomCommandOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1820E7D31BD403ED00835D1E /* MCIMAPCustomCommandOperation.cpp */; };
 		184535701BE23FBD000B0D87 /* MCOIMAPCustomCommandOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1845356F1BE23FBD000B0D87 /* MCOIMAPCustomCommandOperation.mm */; };
@@ -490,11 +492,9 @@
 		C69BA85D17DEFD9A00D601B7 /* NSIndexSet+MCO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C69BA85917DEFCCB00D601B7 /* NSIndexSet+MCO.h */; };
 		C69BA85E17DEFD9F00D601B7 /* NSIndexSet+MCO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C69BA85917DEFCCB00D601B7 /* NSIndexSet+MCO.h */; };
 		C6A81B931706840C00882C15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A81B921706840C00882C15 /* UIKit.framework */; };
-		C6A81B941706840C00882C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64EA78F169F259200778456 /* Foundation.framework */; };
 		C6A81B961706840C00882C15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A81B951706840C00882C15 /* CoreGraphics.framework */; };
 		C6A81BAE1706847900882C15 /* test-all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6A81BAC1706847900882C15 /* test-all.cpp */; };
 		C6A81BAF170684D300882C15 /* test-all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6A81BAC1706847900882C15 /* test-all.cpp */; };
-		C6A81BB2170685A700882C15 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BA2C191705F4E6003F0E9E /* libMailCore-ios.a */; };
 		C6A81BB41706891B00882C15 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A81BB31706891B00882C15 /* CFNetwork.framework */; };
 		C6A81BBA17068C0600882C15 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6A81BB717068C0600882C15 /* AppDelegate.mm */; };
 		C6A81BBB17068C0600882C15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A81BB817068C0600882C15 /* main.m */; };
@@ -2180,10 +2180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6ED6D1D17A191BF00A4A14C /* Security.framework in Frameworks */,
+				1280EFAB1F5E45C3007D0FF8 /* libMailCore-ios.a in Frameworks */,
 				C6A81BB41706891B00882C15 /* CFNetwork.framework in Frameworks */,
-				C6A81BB2170685A700882C15 /* libMailCore-ios.a in Frameworks */,
 				C6A81B931706840C00882C15 /* UIKit.framework in Frameworks */,
-				C6A81B941706840C00882C15 /* Foundation.framework in Frameworks */,
+				12BF75751F5D003100E33EA9 /* Foundation.framework in Frameworks */,
 				C6A81B961706840C00882C15 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,15 @@
 
 #include <MailCore/MailCore.h>
 
-extern void testAllMac();
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+	extern void testAllMac(void);
+
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* defined(__mailcore2__test_all_mac__) */

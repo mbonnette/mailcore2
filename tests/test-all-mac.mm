@@ -114,12 +114,16 @@ void testObjC()
     }
   }];
   
-  
-  [[NSRunLoop currentRunLoop] run];
-// MDB  [session autorelease];
+#ifdef __cplusplus
+//	[[NSRunLoop currentRunLoop] run];
+//	[session autorelease];
+#endif
 }
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void testAllMac()
 {
@@ -149,3 +153,8 @@ void testAllMac()
     
   pool->release();
 }
+	
+#ifdef __cplusplus
+}
+#endif
+
