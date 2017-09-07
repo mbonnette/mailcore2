@@ -10,9 +10,7 @@
 
 #include <MailCore/MailCore.h>
 
-extern "C" {
-	extern int mailstream_debug;
-}
+static int mailstream_debug;
 
 static mailcore::String * password = NULL;
 static mailcore::String * displayName = NULL;
